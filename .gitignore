@@ -42,5 +42,4 @@
 *.env
 
 # Ignorar archivos de cache de editores como .vscode y .idea/
-.vscode/
-.idea/
+Archivos de caché como .vscode/ y .idea/
