@@ -1,0 +1,46 @@
+# Ignorar archivos compilados de Java
+*.class
+
+# Ignorar directorios de compilación
+/bin/
+/target/
+
+# Ignorar archivos generados por IDEs
+/.idea/
+/*.iml
+/.vscode/
+
+# Ignorar paquetes de dependencias (si utilizas Maven o Gradle)
+# Maven
+/mvnw/
+/mvnw.cmd
+/.mvn/
+/target/
+
+# Gradle
+.gradle/
+/build/
+
+# Ignorar archivos de configuración de sistema en macOS
+.DS_Store
+
+# Ignorar archivos de respaldo creados por editores de texto
+*~
+*.swp
+*.swo
+
+# Ignorar todos los archivos con extension .log (Archivos log)
+*.log
+
+# Ignorar la carpeta node_modules/ (Si es un proyecto de Node.js)
+*.node_modules/
+
+# Ignorar la carpeta venv/ (si es un proyecto de Phyton)
+.venv/
+
+# Ignorar todos los archivos .env que contienen variables de entorno sensibles
+*.env
+
+# Ignorar archivos de cache de editores como .vscode y .idea/
+.vscode/
+.idea/
