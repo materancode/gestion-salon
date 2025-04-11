@@ -150,7 +150,9 @@ public class User {
 
     @Override
     public String toString() {
-        return getUsuario() + "," + getContrasenia() + "," + getNombre() + "," + getApellido() + "," + getDireccion() + "," + getTelefono() + "," + getEmail();
+        return getUsuario() + "," + getContrasenia() + "," + getNombre() 
+        + "," + getApellido() + "," + getDireccion() + "," + getTelefono() 
+        + "," + getEmail();
     }
 
 }

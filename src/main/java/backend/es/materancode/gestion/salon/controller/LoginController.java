@@ -1,12 +1,10 @@
 package backend.es.materancode.gestion.salon.controller;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
+
 
 public class LoginController {
     private final String usuario = "primer usuario";
@@ -50,8 +48,6 @@ public class LoginController {
         textCambiante.setText("Credenciales invalidas");
         return;
     }
-
     textCambiante.setText("Usuario validado correctamente");
     }
-
 }
