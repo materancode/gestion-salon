@@ -1,9 +1,13 @@
 package backend.es.materancode.gestion.salon.controller;
+import backend.es.materancode.gestion.salon.PrincipalApplication;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 
 public class LoginController {
@@ -34,6 +38,22 @@ public class LoginController {
     @FXML
     Text textCambiante;
 
+    /**Text Registro */
+    @FXML
+    Text textRegistro;
+
+    /**Button Acceso a pantalla de Registro */
+    @FXML
+    Button onButtonRegistrar;
+
+    /**Text Olvidaste Password */
+    @FXML
+    Text texOlvidastePassword;
+
+    /**Button Acceso a pantalla de Recuperar password */
+    @FXML
+    Button onButtonRecoverPass;
+
 
 
     @FXML
@@ -49,5 +69,35 @@ public class LoginController {
         return;
     }
     textCambiante.setText("Usuario validado correctamente");
+    }
+
+
+    @FXML
+    protected void openButtonClickRegistrar(){
+         try {
+            Stage stage = (Stage) onButtonRegistrar.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource(""));
+            Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+            stage.setTitle("Pantalla Principal");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @FXML
+    protected void openButtonClickRecoverPass(){
+        try {
+            Stage stage = (Stage) onButtonRecoverPass.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("recoverpassword.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+            stage.setTitle("Pantalla Recuperacion Password");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
