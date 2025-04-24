@@ -73,7 +73,7 @@ public class LoginController {
     textCambiante.setText("Usuario validado correctamente");
     }
 
-
+    @FXML
     protected void accionBottonPantallaRegistro(){
         try {
             Stage stage = (Stage) bottonPantallaRegistro.getScene().getWindow();
