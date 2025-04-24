@@ -29,16 +29,12 @@ public class RecoverPasswordController {
     /**Texto Cambiante segun datos ingresados  */
     @FXML Text textCambiante;
 
-    /*Boton para enviar codigo de recuperacion */
-    @FXML
-    Button onButtonClickEnviarEmail;
-
 
     @FXML
     protected void openButtonClickVolver(){
           try {
             Stage stage = (Stage) onButtonClickVolver.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("login.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/login.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             stage.setTitle("Pantalla Principal");
             stage.setScene(scene);
