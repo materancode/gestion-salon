@@ -79,7 +79,7 @@ public class RegistroController {
     protected void accionBotonVolver(){
           try {
             Stage stage = (Stage) botonVolver.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/registro.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/login.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 646, 919);
             stage.setTitle("Pantalla Principal");
             stage.setScene(scene);
