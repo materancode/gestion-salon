@@ -43,8 +43,8 @@ public class LoginController {
     Text textRegistro;
 
     /**Button Acceso a pantalla de Registro */
-
-
+    @FXML
+    Button bottonPantallaRegistro;
 
     /**Text Olvidaste Password */
     @FXML
@@ -53,6 +53,8 @@ public class LoginController {
     /**Button Acceso a pantalla de Recuperar password */
     @FXML
     Button onClickButtonRecoverPassword;
+
+
 
 
 
@@ -72,13 +74,26 @@ public class LoginController {
     }
 
 
+    protected void accionBottonPantallaRegistro(){
+        try {
+            Stage stage = (Stage) bottonPantallaRegistro.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/registro.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 700, 919);
+            stage.setTitle("Pantalla de Registro");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @FXML
     protected void openClickButtonRecoverPassword(){
         try {
             Stage stage = (Stage) onClickButtonRecoverPassword.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/recoverPassword.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+            Scene scene = new Scene(fxmlLoader.load(), 646, 919);
             stage.setTitle("Pantalla Recuperacion Password");
             stage.setScene(scene);
             stage.show();
@@ -86,4 +101,5 @@ public class LoginController {
             e.printStackTrace();
         }
     }
+
 }

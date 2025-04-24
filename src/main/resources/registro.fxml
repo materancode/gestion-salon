@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1002.0" prefWidth="687.0" style="-fx-background-color: F2D2E7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backend.es.materancode.gestion.salon.controller.RegistroController">
+   <children>
+      <Button fx:id="botonVolver" lineSpacing="1.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#accionBotonVolver" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: F2C4DE;" text="Volver" textFill="#757575">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="-40.0" right="500.0" />
+         </VBox.margin>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cabezaUser.drawio.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </ImageView>
+      <Text fx:id="textUsuario" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" wrappingWidth="66.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="textFieldUsuario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="547.0" promptText="Escribe un nombre de Usuario">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </TextField>
+      <Text fx:id="textEmail" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="66.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="textFieldEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="547.0" promptText="Escribe tu Email">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </TextField>
+      <Text fx:id="textEmailRepeat" strokeType="OUTSIDE" strokeWidth="0.0" text="Repite tu Email:" wrappingWidth="134.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="textFieldEmailRepeat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="547.0" promptText="Repite tu Email">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </TextField>
+      <Text fx:id="textContrasenia" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="101.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <PasswordField fx:id="texFieldContrasenia" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="543.0" promptText="Escribe una contraseña">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Text fx:id="textContraseniaRepeat" strokeType="OUTSIDE" strokeWidth="0.0" text="Repite la Contraseña:" wrappingWidth="206.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <PasswordField fx:id="textFieldContraseniaRepeat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="543.0" promptText="Repite la contraseña">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Text fx:id="textNombre" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" wrappingWidth="73.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <PasswordField fx:id="texFieldtNombre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="543.0" promptText="Escribe tu nombre">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Text fx:id="textApellidos" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos:" wrappingWidth="82.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <PasswordField fx:id="textFieldApellidos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="543.0" promptText="Escribe tus apellidos">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Text fx:id="textDireccion" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion:" wrappingWidth="83.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <PasswordField fx:id="textFieldDireccion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="543.0" promptText="Escribe tu direccion/domicilio">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Text fx:id="textTelefono" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono:" wrappingWidth="81.943359375">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <PasswordField fx:id="textFieldTelefono" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="543.0" promptText="Telefono de contacto">
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Text fx:id="textCambiante" strokeType="OUTSIDE" strokeWidth="0.0" text="Click en registrar para finalizar el registro" textAlignment="CENTER" wrappingWidth="275.7294921875">
+         <VBox.margin>
+            <Insets bottom="25.0" left="30.0" />
+         </VBox.margin>
+      </Text>
+      <Button fx:id="onButtonRegistrar" lineSpacing="1.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#abrirButtonClickRegistrar" prefHeight="66.0" prefWidth="130.0" style="-fx-background-color: F2C4DE;" text="Registrarse" textFill="#757575">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
