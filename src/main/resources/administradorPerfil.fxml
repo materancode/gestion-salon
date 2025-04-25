@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="600.0" style="-fx-background-color: F2D2E7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backend.es.materancode.gestion.salon.controller.AdministradorPerfil">
+   <children>
+      <Text fill="#3c3b3b" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfil de administrador" wrappingWidth="152.5732421875">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <Text fx:id="textAdministradorCambiante" strokeType="OUTSIDE" strokeWidth="0.0" text="Hola, ___Admin__Bienvenid@" wrappingWidth="191.5380859375">
+         <VBox.margin>
+            <Insets bottom="50.0" left="200.0" top="30.0" />
+         </VBox.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selecciona una opcion a gestionar" wrappingWidth="351.7294921875">
+         <VBox.margin>
+            <Insets left="130.0" />
+         </VBox.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonGestionarProductos" mnemonicParsing="false" onAction="#openButtonGestionarProductos" prefHeight="66.0" prefWidth="158.0" style="-fx-background-color: F2C4DE;" text="Gestion productos">
+         <VBox.margin>
+            <Insets bottom="30.0" left="230.0" top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="gestionUsuariosButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="158.0" style="-fx-background-color: F2C4DE;" text="Gestion usuarios">
+         <VBox.margin>
+            <Insets bottom="30.0" left="230.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="gestionEstadisticasButton" mnemonicParsing="false" prefHeight="67.0" prefWidth="158.0" style="-fx-background-color: F2C4DE;" text="Estadisticas">
+         <VBox.margin>
+            <Insets left="230.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</VBox>

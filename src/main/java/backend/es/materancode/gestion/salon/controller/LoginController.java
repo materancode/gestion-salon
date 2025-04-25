@@ -87,7 +87,6 @@ public class LoginController {
         }
     }
 
-
     @FXML
     protected void openClickButtonRecoverPassword(){
         try {
@@ -101,5 +100,4 @@ public class LoginController {
             e.printStackTrace();
         }
     }
-
 }
