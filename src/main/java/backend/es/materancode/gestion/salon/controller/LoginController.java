@@ -64,7 +64,7 @@ public class LoginController extends AbstractController {
     private ComboBox comboIdioma;
 
     @FXML
-    public void initilize(){
+    public void initialize(){
         List<String> idiomas = new ArrayList<>();
         idiomas.add("en");
         idiomas.add("es");
@@ -74,6 +74,15 @@ public class LoginController extends AbstractController {
     @FXML
     protected void cambiarIdiomaCombo(){
         setPropertiesIdioma(loadIdioma("idioma",comboIdioma.getValue().toString()));
+        textUsuario.setText(getPropertiesIdioma().getProperty("textUsuario"));
+        textContrasenia.setText(getPropertiesIdioma().getProperty("textContrasenia"));
+        onButtonClickAceptar.setText(getPropertiesIdioma().getProperty("onButtonClickAceptar"));
+        textCambiante.setText(getPropertiesIdioma().getProperty("textCambiante"));
+        textRegistro.setText(getPropertiesIdioma().getProperty("textRegistro"));
+        bottonPantallaRegistro.setText(getPropertiesIdioma().getProperty("bottonPantallaRegistro"));
+        texOlvidastePassword.setText(getPropertiesIdioma().getProperty("texOlvidastePassword"));
+        onClickButtonRecoverPassword.setText(getPropertiesIdioma().getProperty("onClickButtonRecoverPassword"));
+        
     }
 
     @FXML

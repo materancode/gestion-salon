@@ -20,7 +20,7 @@
       </ComboBox>
       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/cabezaUser.drawio.png" />
+            <Image url="@../images/cabezaUser.drawio.png" />
          </image>
       </ImageView>
       <Text fx:id="textUsuario" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" wrappingWidth="66.943359375">
