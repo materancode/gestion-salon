@@ -1,62 +1,80 @@
 package backend.es.materancode.gestion.salon.controller;
+import java.util.ArrayList;
+import java.util.List;
+
 import backend.es.materancode.gestion.salon.PrincipalApplication;
+import backend.es.materancode.gestion.salon.controller.abstractas.AbstractController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
-public class LoginController {
+public class LoginController extends AbstractController {
     private final String usuario = "primer usuario";
     private final String contrasenia = "1234";
 
     /**Text Usuario */
     @FXML
-    Text textUsuario;
+    private  Text textUsuario;
 
     /*Text Contrasenia */
     @FXML
-    Text textContrasenia;
+    private Text textContrasenia;
 
     /**TextField Usuario */
     @FXML
-    TextField textFieldUsuario;
+    private  TextField textFieldUsuario;
 
     /**TextFiel Contrasenia */
     @FXML
-    PasswordField texFieldContrasenia;
+    private PasswordField texFieldContrasenia;
 
     /*Button Aceptar login */
     @FXML
-    Button onButtonClickAceptar;
+    private Button onButtonClickAceptar;
 
     /** Text Cambiante */
     @FXML
-    Text textCambiante;
+    private Text textCambiante;
 
     /**Text Registro */
     @FXML
-    Text textRegistro;
+    private Text textRegistro;
 
     /**Button Acceso a pantalla de Registro */
     @FXML
-    Button bottonPantallaRegistro;
+    private Button bottonPantallaRegistro;
 
     /**Text Olvidaste Password */
     @FXML
-    Text texOlvidastePassword;
+    private Text texOlvidastePassword;
 
     /**Button Acceso a pantalla de Recuperar password */
     @FXML
-    Button onClickButtonRecoverPassword;
+    private Button onClickButtonRecoverPassword;
 
+    /*Button para cambiar idioma */
+    @FXML
+    private ComboBox comboIdioma;
 
+    @FXML
+    public void initilize(){
+        List<String> idiomas = new ArrayList<>();
+        idiomas.add("en");
+        idiomas.add("es");
+        comboIdioma.getItems().addAll(idiomas);
+    }
 
-
+    @FXML
+    protected void cambiarIdiomaCombo(){
+        setPropertiesIdioma(loadIdioma("idioma",comboIdioma.getValue().toString()));
+    }
 
     @FXML
     protected void openButtonClickAceptar() {
@@ -77,7 +95,7 @@ public class LoginController {
     protected void accionBottonPantallaRegistro(){
         try {
             Stage stage = (Stage) bottonPantallaRegistro.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/registro.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/view/registro.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 919);
             stage.setTitle("Pantalla de Registro");
             stage.setScene(scene);
@@ -91,7 +109,7 @@ public class LoginController {
     protected void openClickButtonRecoverPassword(){
         try {
             Stage stage = (Stage) onClickButtonRecoverPassword.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/recoverPassword.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/view/recoverPassword.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 646, 919);
             stage.setTitle("Pantalla Recuperacion Password");
             stage.setScene(scene);

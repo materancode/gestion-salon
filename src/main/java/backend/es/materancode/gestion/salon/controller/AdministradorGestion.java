@@ -19,7 +19,7 @@ public class AdministradorGestion {
     protected void openButtonClickVolverAtras(){
            try {
             Stage stage = (Stage) onButtonClickVolver.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/administradorPerfil.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/view/administradorPerfil.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 646, 919);
             stage.setTitle("Pantalla perfil administrador");
             stage.setScene(scene);

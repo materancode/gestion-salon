@@ -23,7 +23,7 @@ public class AdministradorPerfil {
 
            try {
             Stage stage = (Stage) buttonGestionarProductos.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/administradorGestProductos.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/view/administradorGestProductos.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 919);
             stage.setTitle("Pantalla de gestión productos del salon");
             stage.setScene(scene);

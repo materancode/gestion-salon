@@ -34,7 +34,7 @@ public class RecoverPasswordController {
     protected void openButtonClickVolver(){
           try {
             Stage stage = (Stage) onButtonClickVolver.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/login.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/view/login.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 646, 919);
             stage.setTitle("Pantalla Principal");
             stage.setScene(scene);
