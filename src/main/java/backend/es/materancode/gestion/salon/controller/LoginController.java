@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import backend.es.materancode.gestion.salon.PrincipalApplication;
-import backend.es.materancode.gestion.salon.controller.abstractas.AbstractController;
+import backend.es.materancode.gestion.salon.controller.abstractas.AbstractControllerIdioma;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,7 +15,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
-public class LoginController extends AbstractController {
+public class LoginController extends AbstractControllerIdioma {
     private final String usuario = "primer usuario";
     private final String contrasenia = "1234";
 
@@ -63,14 +63,16 @@ public class LoginController extends AbstractController {
     @FXML
     private ComboBox comboIdioma;
 
+    /*Inicializamos idiomas para agregar a la lista */
     @FXML
-    public void initialize(){
+    private void initialize(){
         List<String> idiomas = new ArrayList<>();
         idiomas.add("en");
         idiomas.add("es");
         comboIdioma.getItems().addAll(idiomas);
     }
 
+    /*Funcion que cambia el idioma de login */
     @FXML
     protected void cambiarIdiomaCombo(){
         setPropertiesIdioma(loadIdioma("idioma",comboIdioma.getValue().toString()));
@@ -85,6 +87,7 @@ public class LoginController extends AbstractController {
         
     }
 
+    /*Boton de aceptar para acceder a perfil personal si ya se ha registrado el usuario */
     @FXML
     protected void openButtonClickAceptar() {
         if (textFieldUsuario== null || textFieldUsuario.getText().isEmpty() || 
@@ -100,6 +103,7 @@ public class LoginController extends AbstractController {
     textCambiante.setText("Usuario validado correctamente");
     }
 
+    /*Funcion Botton de acceso a pantalla de registro si no se tiene cuenta aun */
     @FXML
     protected void accionBottonPantallaRegistro(){
         try {
@@ -114,6 +118,7 @@ public class LoginController extends AbstractController {
         }
     }
 
+    /*Funcion Botton para recuperar contrasenia de usuario ya registrado, nos envia a la pantalla de recoverPassword*/
     @FXML
     protected void openClickButtonRecoverPassword(){
         try {

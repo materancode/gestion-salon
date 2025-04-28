@@ -5,18 +5,22 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
 
-public abstract class AbstractController {
+public abstract class AbstractControllerIdioma {
 
+    /*Declaramos Properties con la variable */
     private Properties propertiesIdioma;
     
+    /*Declaramos set para modificar */
     public void setPropertiesIdioma(Properties properties) {
         propertiesIdioma = properties;
     }
 
+    /*Declaramos get para obtener */
     public Properties  getPropertiesIdioma(){
         return propertiesIdioma;
     }
 
+    /*Cargamos el idioma y verificamos si existe en el fichero */
     public Properties loadIdioma(String nombreFichero, String idioma) {
         Properties properties = new Properties();
 
@@ -24,7 +28,7 @@ public abstract class AbstractController {
             return properties;
         }
 
-        String path = "src/main/resources/" + nombreFichero + "-" + ".properties";
+        String path = "src/main/resources/" + nombreFichero +"-"+ idioma + ".properties";
 
         File file = new File(path);
 
@@ -35,7 +39,7 @@ public abstract class AbstractController {
 
     try {
         FileInputStream input = new FileInputStream(path);
-        InputStreamReader isr = new InputStreamReader(input, "UtF-8");
+        InputStreamReader isr = new InputStreamReader(input,"UtF-8");
         properties.load(isr);
     } catch (Exception e) {
         e.printStackTrace();

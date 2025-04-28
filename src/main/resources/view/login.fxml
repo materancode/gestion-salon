@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="646.0" style="-fx-background-color: F2D2E7;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backend.es.materancode.gestion.salon.controller.LoginController">
+<VBox alignment="CENTER" depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="646.0" style="-fx-background-color: F2D2E7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backend.es.materancode.gestion.salon.controller.LoginController">
    <children>
       <ComboBox fx:id="comboIdioma" onAction="#cambiarIdiomaCombo" prefWidth="150.0" promptText="Idioma" style="-fx-background-color: F2C4DE;">
          <VBox.margin>
@@ -23,9 +23,9 @@
             <Image url="@../images/cabezaUser.drawio.png" />
          </image>
       </ImageView>
-      <Text fx:id="textUsuario" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" wrappingWidth="66.943359375">
+      <Text fx:id="textUsuario" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" wrappingWidth="143.943359375">
          <VBox.margin>
-            <Insets right="470.0" top="20.0" />
+            <Insets right="400.0" top="20.0" />
          </VBox.margin>
          <font>
             <Font name="Cambria Bold" size="16.0" />
@@ -36,9 +36,9 @@
             <Insets top="10.0" />
          </VBox.margin>
       </TextField>
-      <Text fx:id="textContrasenia" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="101.943359375">
+      <Text fx:id="textContrasenia" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="172.943359375">
          <VBox.margin>
-            <Insets right="440.0" top="20.0" />
+            <Insets right="365.0" top="20.0" />
          </VBox.margin>
          <font>
             <Font name="Cambria Bold" size="16.0" />
@@ -48,7 +48,7 @@
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin></PasswordField>
-      <Text fx:id="textCambiante" strokeType="OUTSIDE" strokeWidth="0.0" text="Click en aceptar">
+      <Text fx:id="textCambiante" strokeType="OUTSIDE" strokeWidth="0.0" text="Click en aceptar" wrappingWidth="124.3466796875">
          <VBox.margin>
             <Insets top="50.0" />
          </VBox.margin>
