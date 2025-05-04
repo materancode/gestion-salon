@@ -163,6 +163,11 @@ La app permitiría a las clientas agendar citas de manera fácil, consultar la d
 | **Fecha** | _23-03-2025_ |
 
 
-### Ver pantallas de la aplicación
+## Pantallas principales
 
-[Ver imagenes](src\main\resources\images\pantallasAppi)
+
+### Pantalla login
+<img src="src/main/resources/images/pantallasAppi/pantallaPrincipal.png">
+
+### Pantalla registro
+<img src="src\main\resources\images\pantallasAppi\registroPantalla.png">
