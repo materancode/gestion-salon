@@ -23,13 +23,13 @@ public class RegistroController {
     @FXML
     Text textEmail;
 
-    @FXML 
+    @FXML
     TextField textFieldEmail;
 
     @FXML
     Text textEmailRepeat;
 
-    @FXML 
+    @FXML
     TextField textFieldEmailRepeat;
 
     @FXML

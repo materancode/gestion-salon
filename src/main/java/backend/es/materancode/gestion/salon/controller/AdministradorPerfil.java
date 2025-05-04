@@ -18,6 +18,9 @@ public class AdministradorPerfil {
     @FXML
     Button buttonGestionarProductos;
 
+    /*
+     * Perfil de administrador
+     */
     @FXML
     protected void openButtonGestionarProductos(){
 
