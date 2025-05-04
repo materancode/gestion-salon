@@ -162,6 +162,7 @@ La app permitiría a las clientas agendar citas de manera fácil, consultar la d
 | **Autor** | _materancode_ |
 | **Fecha** | _23-03-2025_ |
 
-## Diagrama
 
-<img src="images/salon_casosUso.png">
+### Ver pantallas de la aplicación
+
+[Ver imagenes](src\main\resources\images\pantallasAppi)
