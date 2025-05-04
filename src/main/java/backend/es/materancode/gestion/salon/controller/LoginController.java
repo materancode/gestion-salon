@@ -14,7 +14,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public class LoginController extends AbstractControllerIdioma {
     private final String usuario = "primer usuario";
     private final String contrasenia = "1234";

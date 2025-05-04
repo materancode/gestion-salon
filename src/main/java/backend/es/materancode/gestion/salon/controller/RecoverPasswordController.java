@@ -8,7 +8,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public class RecoverPasswordController {
         /**Botton para volver a la pantalla inicial */
     @FXML
@@ -30,6 +33,7 @@ public class RecoverPasswordController {
     @FXML Text textCambiante;
 
 
+    /*Funcion para volver a la pantalla de loggin */
     @FXML
     protected void openButtonClickVolver(){
           try {

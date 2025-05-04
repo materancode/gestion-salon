@@ -4,7 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public abstract class AbstractControllerIdioma {
 
     /*Declaramos Properties con la variable */

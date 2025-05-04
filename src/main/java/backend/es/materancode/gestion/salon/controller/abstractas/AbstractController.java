@@ -5,6 +5,10 @@ import backend.es.materancode.gestion.salon.model.servicios.UsuarioServiceModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public abstract class AbstractController {
     private String direccion = "";
     static final String PATH_DB ="src/main/resources/usuariosSalon.db";

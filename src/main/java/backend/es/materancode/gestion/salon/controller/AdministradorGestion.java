@@ -6,13 +6,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public class AdministradorGestion {
 
     /*Button volver a perfil de administrador */
     @FXML
     Button onButtonClickVolver;
-    
 
     /*Funcion para volver al perfil del administrador */
     @FXML

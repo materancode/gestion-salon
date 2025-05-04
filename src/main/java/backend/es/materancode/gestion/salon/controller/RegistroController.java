@@ -13,75 +13,100 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public class RegistroController extends AbstractController {
-    
+    /*Botton para volver */
     @FXML
     Button botonVolver;
 
+    /**texto usuario */
     @FXML
     Text textUsuario;
 
+    /*TexField de usuario */
     @FXML
     TextField textFieldUsuario;
 
+    /*Text Email */
     @FXML
     Text textEmail;
 
+    /*Texfield email */
     @FXML
     TextField textFieldEmail;
 
+    /*Text repearEmail */
     @FXML
     Text textEmailRepeat;
 
+    /*textField repeat email */
     @FXML
     TextField textFieldEmailRepeat;
 
+    /*Text contrasenia */
     @FXML
     Text textContrasenia;
 
+    /*TextField contrasenia */
     @FXML
     TextField texFieldContrasenia;
 
+    /*Tex contrasenia repeat */
     @FXML
     Text textContraseniaRepeat;
 
+    /*TextField contrasenia repeat */
     @FXML
     TextField textFieldContraseniaRepeat;
 
+    /*Text nombre */
     @FXML
     Text textNombre;
 
+    /*TextField nombre */
     @FXML
     TextField texFieldtNombre;
 
+    /*Text apellidos */
     @FXML
     Text textApellidos;
 
+    /*TextField apellidos */
     @FXML
     TextField textFieldApellidos;
 
+    /*Text direccion */
     @FXML
     Text textDireccion;
 
+    /*TextField direccion */
     @FXML
     TextField textFieldDireccion;
 
+    /*Text telefono */
     @FXML
     Text textTelefono;
 
+    /*Texfield Telefono */
     @FXML
     TextField textFieldTelefono;
 
     //@FXML
     //Button onButtonRegistrar;
+
+    /*Botton de registrar usuarios */
     @FXML
     private Button onButtonRegistrar;
 
+    /*Text Cambiante */
     @FXML
     Text textCambiante;
 
 
+    /*Metodo para volver al loggin */
     @FXML
     protected void accionBotonVolver(){
           try {
@@ -96,6 +121,7 @@ public class RegistroController extends AbstractController {
         }
     }
 
+    /*Metodo para agregar usuarios */
     @FXML
     protected void abrirButtonClickRegistrar(){
         if (!comprobarRegistrar()) {
@@ -121,6 +147,7 @@ public class RegistroController extends AbstractController {
 
     }
 
+    /*Metodo para comprobar textFields */
     protected boolean comprobarRegistrar() {
 
         //Contrasenia y repeatContrasenia no puede ser null o vacia

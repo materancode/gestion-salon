@@ -5,7 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public class PrincipalApplication extends Application {
         @Override
     public void start(Stage stage) throws IOException {

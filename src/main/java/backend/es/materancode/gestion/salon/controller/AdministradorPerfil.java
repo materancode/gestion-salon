@@ -7,7 +7,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public class AdministradorPerfil {
     
     /*Texto cambiante en userName administrador */

@@ -7,7 +7,10 @@ import java.util.ArrayList;
 
 import backend.es.materancode.gestion.salon.model.User;
 import backend.es.materancode.gestion.salon.model.abstractas.Conexion;
-
+/**
+ * @author materancode
+ * @version 1.0.0
+ */
 public class UsuarioServiceModel extends Conexion {
         /**
      * Constructor vacio
@@ -34,15 +37,15 @@ public class UsuarioServiceModel extends Conexion {
          ResultSet resultado = sentencia.executeQuery()) {
 
         while (resultado.next()) {
-            String userStr = resultado.getString("usuario");
-            String passwordStr = resultado.getString("contrasenia");
+            String userStr = resultado.getString("user");
+            String contraseniaStr = resultado.getString("contrasenia");
             String nombreSrt = resultado.getString("nombre");
             String apellidoSrt = resultado.getString("apellido");
             String  direccionSrt = resultado.getString("direccion");
             String telefonoSrt = resultado.getString("telefono");
             String emailStr = resultado.getString("email");
 
-            User usuario = new User(userStr, passwordStr,nombreSrt,apellidoSrt,direccionSrt,telefonoSrt,emailStr);
+            User usuario = new User(userStr, contraseniaStr,nombreSrt,apellidoSrt,direccionSrt,telefonoSrt,emailStr);
             usuarios.add(usuario);
         }
     } catch (Exception e) { 
@@ -89,7 +92,7 @@ public class UsuarioServiceModel extends Conexion {
         if (usuario == null) {
             return false;
         }
-        String sql = "INSERT INTO usuariosSalon (usuario, contrasenia, nombre, apellido, direccion, telefono, email) Values (?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO usuarios (user, contrasenia, nombre, apellido, direccion, telefono, email) Values (?,?,?,?,?,?,?)";
         return actualizarDatos(sql, usuario);
     }
 
@@ -99,7 +102,7 @@ public class UsuarioServiceModel extends Conexion {
      * @return Usuario buscado
      */
     public User obtenerUsuariosPorUser(String user){
-        String sql = "SELECT * FROM usuariosSalon WHERE usuario = '" + user + "'";
+        String sql = "SELECT * FROM usuarios WHERE user = '" + user + "'";
         ArrayList<User> usuarios = leerSentencia(sql);
         if (usuarios.isEmpty()) {
             return null;
@@ -113,7 +116,7 @@ public class UsuarioServiceModel extends Conexion {
      * @return usuario buscado
      */
     public User obtenerUsuariosPorEmail(String email){
-        String sql = "SELECT * FROM usuariosSalon WHERE email = '" + email + "'";
+        String sql = "SELECT * FROM usuarios WHERE email = '" + email + "'";
         ArrayList<User> usuarios = leerSentencia(sql);
         if (usuarios.isEmpty()) {
             return null;
@@ -126,7 +129,7 @@ public class UsuarioServiceModel extends Conexion {
      * @return lista de usuarios
      */
     public ArrayList<User> obtenerTodosLosUsuarios(){
-        String sql = "SELECT * FROM usuariosSalon";
+        String sql = "SELECT * FROM usuarios";
         return leerSentencia(sql);
     }
 
