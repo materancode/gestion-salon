@@ -89,7 +89,7 @@ public class UsuarioServiceModel extends Conexion {
         if (usuario == null) {
             return false;
         }
-        String sql = "INSERT INTO usuariosSalon (user, password, nombre, apellido, direccion, telefono, email) Values (?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO usuariosSalon (usuario, contrasenia, nombre, apellido, direccion, telefono, email) Values (?,?,?,?,?,?,?)";
         return actualizarDatos(sql, usuario);
     }
 
@@ -99,7 +99,7 @@ public class UsuarioServiceModel extends Conexion {
      * @return Usuario buscado
      */
     public User obtenerUsuariosPorUser(String user){
-        String sql = "SELECT * FROM usuarios WHERE user = '" + user + "'";
+        String sql = "SELECT * FROM usuariosSalon WHERE usuario = '" + user + "'";
         ArrayList<User> usuarios = leerSentencia(sql);
         if (usuarios.isEmpty()) {
             return null;
@@ -113,7 +113,7 @@ public class UsuarioServiceModel extends Conexion {
      * @return usuario buscado
      */
     public User obtenerUsuariosPorEmail(String email){
-        String sql = "SELECT * FROM usuarios WHERE email = '" + email + "'";
+        String sql = "SELECT * FROM usuariosSalon WHERE email = '" + email + "'";
         ArrayList<User> usuarios = leerSentencia(sql);
         if (usuarios.isEmpty()) {
             return null;
@@ -126,7 +126,7 @@ public class UsuarioServiceModel extends Conexion {
      * @return lista de usuarios
      */
     public ArrayList<User> obtenerTodosLosUsuarios(){
-        String sql = "SELECT * FROM usuarios";
+        String sql = "SELECT * FROM usuariosSalon";
         return leerSentencia(sql);
     }
 

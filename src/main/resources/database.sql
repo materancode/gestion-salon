@@ -1,10 +1,10 @@
-DROP TABLE IF EXISTS usuarios;
+DROP TABLE IF EXISTS usuariosSalon;
 DROP INDEX IF EXISTS idx_email;
 
 
-CREATE TABLE usuarios (
+CREATE TABLE usuariosSalon (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user TEXT NOT NULL,
+    usuario TEXT NOT NULL,
     contrasenia TEXT NOT NULL,
     nombre TEXT NOT NULL,
     apellido TEXT NOT NULL,
@@ -14,6 +14,6 @@ CREATE TABLE usuarios (
 );
 
 --Insertar usuarios
-INSERT INTO usuarios (user, contrasenia, nombre, apellido, email, direccion, telefono) VALUES
+INSERT INTO usuariosSalon (usuario, contrasenia, nombre, apellido, email, direccion, telefono) VALUES
 ('bellaLila','123','Lila','Gutierrez','lilabella@gmail.com','Calle hermosa 33','585812368'),
 ('CarolineCute','1235','Caroline','Manson','mansoncaro@gmail.com','Calle palermo 63','5654646');
