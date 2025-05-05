@@ -171,3 +171,25 @@ La app permitiría a las clientas agendar citas de manera fácil, consultar la d
 
 ### Pantalla registro
 <img src="src\main\resources\images\pantallasAppi\registroPantalla.png">
+
+
+## Mooks:
+
+<img src="src\main\resources\images\pantallas_appi.drawio.png">
+
+📌 **Tecnologías y Archivos Clave Utilizados en el Sistema de Reservas de Hotel:**
+
+| 💻 Tecnología / Archivo | 📄 Descripción |
+| :---------------------- | :------------- |
+| 🖥️ Java                 | Utilizamos Java como lenguaje principal de programación por su robustez, portabilidad y amplio soporte para aplicaciones de escritorio. Es ideal para sistemas seguros y escalables, como el de reservas hoteleras. |
+| 🎨 JavaFX               | Desarrollamos la interfaz gráfica con JavaFX, una librería moderna de Java para construir UIs interactivas y visualmente atractivas. Permite una experiencia fluida e intuitiva para los usuarios al realizar reservas. |
+| 🗄️ SQLite3             | Implementamos SQLite3 como base de datos por ser ligera, integrada y sin necesidad de servidor. Es perfecta para aplicaciones de escritorio con necesidades moderadas de almacenamiento, y se integra fácilmente con Java. |
+| 🎨 CSS                  | Usamos CSS para estilizar la interfaz JavaFX, logrando una separación clara entre lógica y presentación. Esto mejora la apariencia visual y facilita el mantenimiento del sistema. |
+| ⚙️ Maven                | Gestionamos el proyecto con Apache Maven, una herramienta para la automatización de compilación y gestión de dependencias. Ayuda a mantener el orden del proyecto y facilita el uso de librerías externas. |
+| 🔁 Maven Wrapper (mvnw) | Incluimos Maven Wrapper para que el proyecto se compile sin necesidad de tener Maven instalado previamente. Esto asegura que todos los desarrolladores usen la misma versión, facilitando la portabilidad y consistencia. |
+| 📦 pom.xml              | El archivo `pom.xml` define la estructura del proyecto, sus dependencias, plugins y configuraciones necesarias para que Maven ejecute correctamente el sistema. Es esencial en la automatización y portabilidad del desarrollo. |
+| 🌐 GitHub               | Utilizamos GitHub como plataforma de control de versiones y colaboración. Permite trabajar en equipo, gestionar ramas, revisar código con pull requests y llevar un historial limpio del proyecto. |
+| 🛡️ .gitignore          | Incluimos un archivo `.gitignore` para excluir archivos innecesarios o generados automáticamente (como `target/`, `.idea/`, etc.), manteniendo el repositorio limpio y profesional. |
+| 🤝 CONTRIBUTING.md     | El archivo `CONTRIBUTING.md` proporciona una guía clara para que otros desarrolladores puedan contribuir al proyecto. Incluye pautas de estilo, normas para enviar cambios y cómo reportar errores o sugerencias de mejora. |
+
+Author: materancode 💻
