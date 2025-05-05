@@ -1,3 +1,17 @@
+# ✨ ¡Hola, Bienvenido! ✨
+
+¡Este es mi primer proyecto! Soy un entusiasta estudiante de **primer año** en **Diseño de Aplicaciones Multiplataforma (DAM)**.
+
+Este proyecto marca el inicio de mi emocionante viaje en el desarrollo de software. Cada línea de código aquí es un paso de aprendizaje, una exploración de ideas y la cristalización de conceptos que estoy absorbiendo en mi formación.
+
+Soy alguien que cree en el poder de la tecnología para crear soluciones innovadoras y estoy ansiosa por lo que el futuro me depara en el mundo del desarrollo de apps y aplicar lo que aprendo para construir cosas geniales. Aunque este sea mi primer proyecto, está lleno de dedicación, curiosidad y un gran deseo de aprender y crecer.
+
+Explora, experimenta y siéntete libre de darme tu feedback. Estoy abierta a nuevas ideas y siempre buscando mejorar.
+
+¡Gracias por visitar!
+
+🚀 ¡A codificar y a crear! 🚀
+
 # gestion-salon
 Aplicación de reserva para un salón de belleza:
 La app permitiría a las clientas agendar citas de manera fácil, consultar la disponibilidad de servicios y gestionar sus reservas. Incluiría un sistema de gestión de stock de productos para asegurar que siempre haya disponibilidad de lo necesario. Además, tendría tres roles: un acceso de administrador para la gerente, quien podrá gestionar usuarios y ver estadísticas; un acceso para los empleados, que podrán crear y modificar citas; y una interfaz para las clientas donde podrán ver, modificar o cancelar sus reservas.
